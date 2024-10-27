@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Kdramas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+        <div class="nav-brand">Kdramas</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#contact">Contact</a>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+    <header>
+        <h1>Welcome to My Favorite Kdramas</h1>
+    </header>
+    <main>
+        <section id="kdrama-list">
+            <div class="kdrama-card" onclick="openDescription('kdrama1')">
+                <img src="https://wallpapers.com/images/high/vincenzo-cool-shades-p30a5n2itw4xwvlp.webp" alt="K-Drama 1">
+                <h2>Vincenzo</h2>
+            </div>
+            <div class="kdrama-card" onclick="openDescription('kdrama2')">
+                <img src="https://wallpapercave.com/dwp1x/wp9840069.jpg" alt="K-Drama 2">
+                <h2>Home Town Cha Cha</h2>
+            </div>
+            <div class="kdrama-card" onclick="openDescription('kdrama3')">
+                <img src="https://wallpapercave.com/dwp1x/wp11352119.jpg" alt="K-Drama 3">
+                <h2>Extraordinary Attorney Woo</h2>
+            </div>
+            <div class="kdrama-card" onclick="openDescription('kdrama4')">
+                <img src="https://wallpapercave.com/wp/wp13878481.png" alt="K-Drama 2">
+                <h2>Queen Of Tears</h2>
+            </div>
+            <div class="kdrama-card" onclick="openDescription('kdrama5')">
+                <img src="https://m.media-amazon.com/images/M/MV5BZWUyYmMyMjktMmFjNC00ZGFiLThjODYtNjQ1MzQyODhmZmVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="K-Drama 2">
+                <h2>Strong Woman Do Bong Soon</h2>
+            </div>
+            <div class="kdrama-card" onclick="openDescription('kdrama6')">
+                <img src="https://resizing.flixster.com/1Q-xuYWbTSx7Vs2p3CADxWKx06o=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p24388861_b_v13_aa.jpg" alt="K-Drama 2">
+                <h2>The Good Bad Mother</h2>
+            </div>
+        </section>
+    </main>
+
+    <div id="description-overlay" class="description-overlay">
+
+        <!-- Separate description content for each kdrama -->
+        <div class="description-content" id="description-kdrama1">
+            <span class="close" onclick="closeDescription()">&times;</span>
+            <div class="description-inner">
+                <img src="https://resizing.flixster.com/Om-6TBEld2c_I1k9Jd2GDYu9ASg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19515278_b_h9_aa.jpg" alt="Kdrama 1">
+                <div class="description-text">
+                    <h2>Vincenzo</h2>
+                    <p>Vincenzo" is a popular South Korean television series that aired in 2021, blending elements of crime, drama, and dark comedy. The show stars Song Joong-ki as Vincenzo Cassano, a suave and ruthless consigliere for the Italian Mafia who was adopted and raised in Italy. After a betrayal within the mafia, he returns to South Korea to retrieve hidden gold beneath a dilapidated building called Geumga Plaza.
+
+                        Upon his return, Vincenzo crosses paths with Hong Cha-young, played by Jeon Yeo-been, a tenacious and ambitious lawyer who works for a rival law firm. Together, they take on corrupt conglomerates and powerful adversaries using unorthodox and often illegal methods. Cha-young's transformation from a self-serving lawyer to a passionate advocate for justice is a key element of the story.
+
+                        The series is known for its clever writing, sharp humor, and intense action scenes. The ensemble cast, including Ok Taec-yeon as the enigmatic and ruthless antagonist Jang Jun-woo, adds depth and intrigue to the narrative. "Vincenzo" explores themes of justice, revenge, and the blurred lines between good and evil, all set against the backdrop of a suspenseful and unpredictable storyline.
+
+                        With its unique mix of genres, charismatic performances, and gripping plot twists, "Vincenzo" has garnered a dedicated fan base and critical acclaim, making it a standout series in the world of K-dramas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="description-content" id="description-kdrama2">
+            <span class="close" onclick="closeDescription()">&times;</span>
+            <div class="description-inner">
+                <img src="https://i.pinimg.com/736x/a6/1e/e8/a61ee85b19afd484dc821358ee2bf775.jpg" alt="Kdrama 2">
+                <div class="description-text">
+                    <h2>Hometown cha cha</h2>
+                    <p>Hometown Cha-Cha-Cha" is a heartwarming South Korean romantic comedy-drama series that premiered in 2021. It stars Shin Min-a as Yoon Hye-jin, a successful dentist who moves from Seoul to the seaside village of Gongjin, and Kim Seon-ho as Hong Du-sik, a multi-talented jack-of-all-trades who is beloved by the villagers.
+
+                        The story revolves around the contrasting personalities of Hye-jin and Du-sik. Hye-jin, a pragmatic and sophisticated city woman, finds herself struggling to adapt to the slower pace and close-knit community of Gongjin. Du-sik, on the other hand, is a free-spirited and kind-hearted man who helps everyone in the village with various tasks, earning him the nickname "Chief Hong." As Hye-jin settles into her new life, she learns to appreciate the simplicity and warmth of rural living, while her growing friendship with Du-sik blossoms into a sweet and tender romance.
+
+                        The drama beautifully captures the charm of small-town life, the importance of community, and the healing power of love and friendship. With its picturesque seaside setting, relatable characters, and touching storyline, "Hometown Cha-Cha-Cha" has become a beloved series among fans of K-dramas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more description details as needed -->
+
+        <div class="description-content" id="description-kdrama3">
+            <span class="close" onclick="closeDescription()">&times;</span>
+            <div class="description-inner">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*WbF7cQCNUH41IZrcV4Eazg.jpeg" alt="Kdrama 2">
+                <div class="description-text">
+                    <h2>Extraordinary Attorney Woo</h2>
+                    <p>Extraordinary Attorney Woo" is a compelling South Korean drama series that aired in 2022, featuring a unique blend of legal drama and heartfelt storytelling. The show stars Park Eun-bin as Woo Young-woo, a brilliant young attorney with autism spectrum disorder (ASD). Despite her condition, Young-woo possesses an exceptional memory and a remarkable ability to understand and interpret complex legal cases.
+
+                        The series follows Young-woo as she navigates her career at a prestigious law firm, Hanbada, where she faces prejudice and discrimination from some colleagues while gaining respect and admiration from others. Her unconventional approach to solving legal cases and her unwavering sense of justice often lead to unexpected and innovative solutions.
+
+                        Alongside Young-woo, the series features a diverse cast of characters, including Kang Tae-oh as Lee Jun-ho, a supportive and empathetic colleague who becomes a close friend and potential love interest. The show also highlights the dynamics within the law firm and the personal growth of its characters.
+
+                        "Extraordinary Attorney Woo" not only delves into legal battles and courtroom drama but also sensitively portrays the challenges and triumphs of living with ASD. The series emphasizes themes of acceptance, empathy, and the importance of seeing beyond one's differences to recognize their unique strengths and capabilities.
+
+                        With its engaging plot, strong performances, particularly by Park Eun-bin, and its thoughtful representation of autism, "Extraordinary Attorney Woo" has resonated with audiences, offering both entertainment and insightful social commentary
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="description-content" id="description-kdrama4">
+            <span class="close" onclick="closeDescription()">&times;</span>
+            <div class="description-inner">
+                <img src="https://wallpapercave.com/wp/wp13878920.jpg" alt="Kdrama 4">
+                <div class="description-text">
+                    <h2>Queen Of Tears</h2>
+                    <p>Queen of Tears" is a South Korean drama series that premiered in 2023. The show features a blend of romance, melodrama, and comedy, offering a captivating storyline with emotional depth.
+
+                        The series stars Kim Ji-won and Kim Soo-hyun in the lead roles. Kim Ji-won plays the character of a successful and independent woman who, despite her strong exterior, faces emotional turmoil and personal struggles. Kim Soo-hyun portrays a charming and capable man who becomes entangled in her life, leading to a complex and engaging relationship.
+
+                        The drama explores themes of love, heartbreak, and personal growth, as the characters navigate their individual challenges and their evolving relationship. The narrative is enriched with poignant moments and a touch of humor, making it a compelling watch for fans of romantic dramas.
+
+                        "Queen of Tears" is well-regarded for its strong performances, especially from Kim Ji-won and Kim Soo-hyun, and its ability to balance emotional intensity with lighthearted moments. The series has been praised for its well-written script, character development, and the chemistry between the leads.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="description-overlay" class="description-overlay">
+            <div class="description-content" id="description-kdrama5">
+                <span class="close" onclick="closeDescription()">&times;</span>
+                <div class="description-inner">
+                    <img src="https://img.jakpost.net/c/2017/02/28/2017_02_28_22461_1488271266._large.jpg" alt="Kdrama 5">
+                    <div class="description-text">
+                        <h2>Strong Woman Do Bong Soon</h2>
+                        <p>Strong Woman Do Bong-soon" is a popular South Korean drama series that aired in 2017. It combines elements of romantic comedy, fantasy, and action, and is well-known for its charming and entertaining storyline.
+
+                            The show stars Park Bo-young as Do Bong-soon, a young woman with superhuman strength. Despite her impressive physical abilities, Bong-soon is kind-hearted and dreams of becoming a game developer. She uses her powers to fight crime and help those in need, often with comedic results.
+
+                            The series also features Park Hyung-sik as Ahn Min-hyuk, the CEO of a gaming company who hires Bong-soon as his bodyguard after becoming the target of a stalker. As Bong-soon protects Min-hyuk and becomes involved in his company's world, a romantic relationship develops between them.
+
+                            The drama is known for its engaging mix of romance, humor, and action, with Park Bo-young's portrayal of the strong yet endearing Bong-soon being a standout aspect. The chemistry between the leads, the quirky plot twists, and the lighthearted tone contribute to the show's widespread popularity and enduring appeal.
+
+                            "Strong Woman Do Bong-soon" has been praised for its fun and imaginative premise, along with its ability to blend different genres effectively, making it a delightful watch for fans of romantic comedies and fantasy dramas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
